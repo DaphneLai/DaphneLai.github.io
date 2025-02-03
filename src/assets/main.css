@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap');
+
+
+.bg-img {
+  background: #FDF9F3;
+  background-image: url(https://s3.us-east-2.amazonaws.com/daphnelai.github.io/accent-bg.svg), url(https://s3.us-east-2.amazonaws.com/daphnelai.github.io/home-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+  background-size: cover;
+  
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+h1 {
+  color: #191818;
+  font-family: "Young Serif";
+  font-weight: 400;
+  font-size: 3rem;
+  position: relative;
+  line-height: 110%; /* 52.8px */
+}
+
+h3 {
+  color: #191818;
+  font-family: "Instrument Sans";
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: flexbox;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
