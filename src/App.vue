@@ -1,40 +1,30 @@
-<script setup lang="ts">
-import Hero from './components/Hero.vue';
-import HelloWorld from './components/Hero.vue'
-import ProjectCard from './components/Project-card.vue';
-import TheWelcome from './components/Project-card.vue'
-</script>
-
-
 <template>
-  <body>
-    <Hero />
-    
-  </body>
-
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view/>
 </template>
 
-<style scoped>
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex; 
-    place-items: center;
-  }
+nav {
+  padding: 30px;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
