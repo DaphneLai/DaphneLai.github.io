@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import ProjectCard from "./ProjectCard.vue";
+import ProjectCard from "../ProjectCard/ProjectCard.vue";
+import "./ProjectList.css";
+
 export default {
   props: ["projects"],
   components: { ProjectCard },
 };
 </script>
-
-<style></style>

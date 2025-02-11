@@ -1,17 +1,18 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <HomeSloganVue />
     <ProjectList :projects="projects" />
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
-import ProjectList from "../components/ProjectList.vue";
+import ProjectList from "../components/ProjectList/ProjectList.vue";
+import HomeSloganVue from '../components/HomeSlogan/HomeSlogan.vue';
 
 export default {
   name: "HomeView",
-  components: { ProjectList },
+  components: { HomeSloganVue, ProjectList },
   setup() {
     const projects = ref([
       { id: 1, summary: "fancy text 1", client: "company 1", date: "date 1", links: ["l1", "l2"] },
