@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+.home-slogan {
+  height: 100vh;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1e2268;
+  text-align: left;
+  align-content: center;
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.p-large {
+  font-size: 24px;
+  margin: 0;
+}
+
+.subdued {
+  font-family: "Instrument Sans", serif;
+  color: #94918f;
+}

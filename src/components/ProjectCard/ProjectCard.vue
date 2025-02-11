@@ -9,9 +9,9 @@
 </template>
 
 <script>
+import "./ProjectCard.css";
+
 export default {
   props: ["project"],
 };
 </script>
-
-<style></style>
